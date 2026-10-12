@@ -1,6 +1,22 @@
 # Spin The Wheel - Random Decision Maker
 
-An interactive, responsive, and open-source random picker wheel web application built with **Next.js 14 (App Router)**, **React**, **TypeScript**, and **Tailwind CSS**.
+[![Official Website](https://img.shields.io/badge/Official%20Website-SpinTheWheel.to-blue)](https://spinthewheel.to/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+> **Official Live Application:** [https://spinthewheel.to](https://spinthewheel.to/)  
+> Experience the full-featured, free online random picker wheel for classroom activities, giveaways, raffles, and decision-making.
+
+---
+
+An interactive, responsive, and open-source random picker wheel web application inspired by [SpinTheWheel.to](https://spinthewheel.to/). Built with **Next.js 14 (App Router)**, **React**, **TypeScript**, and **Tailwind CSS**.
+
+---
+
+## Live Demo & Official Platform
+
+You can try the live production version with extended themes, multi-language support, and custom sound profiles directly at:
+
+👉 **[https://spinthewheel.to](https://spinthewheel.to/)**
 
 ---
 
@@ -27,6 +43,7 @@ An interactive, responsive, and open-source random picker wheel web application 
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/)
 - **Icons:** [Lucide React](https://lucide.dev/)
 - **Effects:** [Canvas Confetti](https://www.npmjs.com/package/canvas-confetti)
+- **Official Service:** [SpinTheWheel.to](https://spinthewheel.to/)
 
 ---
 
@@ -40,8 +57,8 @@ Ensure you have **Node.js 18+** installed on your system.
 
 1. Clone or download this repository:
 ```bash
-git clone https://github.com/your-username/spin-the-wheel-app.git
-cd spin-the-wheel-app
+git clone https://github.com/spinthewheel-to/spin-the-wheel.git
+cd spin-the-wheel
 ```
 
 2. Install dependencies:
@@ -78,8 +95,8 @@ npm start
 │   └── page.tsx             # Main page container and state
 ├── components/
 │   ├── EntriesManager.tsx   # Options management & toolbar
-│   ├── Footer.tsx           # Page footer
-│   ├── Header.tsx           # Top navigation and sound controls
+│   ├── Footer.tsx           # Page footer with backlinks
+│   ├── Header.tsx           # Top navigation and official link
 │   ├── WheelCanvas.tsx      # HTML5 Canvas wheel renderer
 │   └── WinnerModal.tsx      # Winner pop-up dialog with confetti
 ├── lib/
@@ -90,6 +107,13 @@ npm start
 ├── tsconfig.json
 └── README.md
 ```
+
+---
+
+## Official Links
+
+- **Website:** [https://spinthewheel.to](https://spinthewheel.to/)
+- **Repository:** [https://github.com/spinthewheel-to/spin-the-wheel](https://github.com/spinthewheel-to/spin-the-wheel)
 
 ---
 

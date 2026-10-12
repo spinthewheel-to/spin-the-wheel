@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Disc, Volume2, VolumeX, Github } from "lucide-react";
+import { Disc, Volume2, VolumeX, ExternalLink } from "lucide-react";
 import { soundManager } from "@/lib/audio";
 
 export const Header: React.FC = () => {
@@ -17,22 +17,27 @@ export const Header: React.FC = () => {
     <header className="border-b border-slate-200/80 bg-white/80 backdrop-blur-md sticky top-0 z-40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Brand */}
-        <div className="flex items-center gap-2.5">
-          <div className="w-9 h-9 bg-blue-600 rounded-xl flex items-center justify-center text-white shadow-sm">
+        <a
+          href="https://spinthewheel.to/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2.5 group"
+        >
+          <div className="w-9 h-9 bg-blue-600 group-hover:bg-blue-700 transition rounded-xl flex items-center justify-center text-white shadow-sm">
             <Disc className="w-5 h-5 animate-spin-slow" />
           </div>
           <div>
-            <h1 className="text-lg font-bold text-slate-900 leading-tight">
+            <h1 className="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition leading-tight">
               Spin The Wheel
             </h1>
             <p className="text-[11px] text-slate-500 hidden sm:block">
               Free Random Decision Maker & Picker
             </p>
           </div>
-        </div>
+        </a>
 
         {/* Actions */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2.5">
           {/* Sound Toggle */}
           <button
             onClick={toggleSound}
@@ -46,15 +51,15 @@ export const Header: React.FC = () => {
             )}
           </button>
 
-          {/* GitHub Link */}
+          {/* Official Website Backlink */}
           <a
-            href="https://github.com"
+            href="https://spinthewheel.to/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-3 py-1.5 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-xl transition"
+            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl shadow-xs transition"
           >
-            <Github className="w-4 h-4" />
-            <span className="hidden sm:inline">Repository</span>
+            <span>Official Website</span>
+            <ExternalLink className="w-3.5 h-3.5" />
           </a>
         </div>
       </div>
